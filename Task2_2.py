@@ -35,7 +35,7 @@ hi2 = 4.07
 
 ye = 25.817057012959342*pow(10,-3)
 yh = 14.898742709110866*pow(10,-3)
-mainx = [0, 1, 1, 2, 2, 3]
+mainx = [-9, -3, -3, 3, 3, 9]
 mainyc = [-hi1, -hi1, -hi1-V0, -hi1-V0, -hi1, -hi1]
 mainyv = [-hi1-Eg1, -hi1-Eg1, -hi1-V0-Eg2, -hi1-V0-Eg2, -hi1-Eg1, -hi1-Eg1]
 plt.plot(mainx, mainyc,'k')
@@ -46,16 +46,16 @@ plt.plot(mainx[2:4], [-hi1-V0-Eg2 + Efp, -hi1-V0-Eg2+ Efp ], 'r--', linewidth =0
 
 plt.plot(mainx[2:4], [-hi1-V0 +ye, -hi1-V0 +ye], 'b--', linewidth =0.7)
 plt.plot(mainx[2:4], [-hi1-V0-Eg2 -yh, -hi1-V0-Eg2-yh ], 'b--', linewidth =0.7)
-plt.xticks([])
 
 
 
-plt.text(1,-hi1-V0 +ye-0.1, 'En', color='blue', fontsize=8)
-plt.text(1,-hi1-V0-Eg2 -yh+0.05, 'Eh', color='blue', fontsize=8)
-plt.text(2.05,-hi1-V0-Eg2 + Efp, 'Fv*', color='red', fontsize=8)
-plt.text(2.05,-hi1-V0 +Efn-0.04, 'Fc*', color='red', fontsize=8)
 
+plt.text(-2,-hi1-V0 +ye-0.1, 'En', color='blue', fontsize=8)
+plt.text(-2,-hi1-V0-Eg2 -yh+0.05, 'Eh', color='blue', fontsize=8)
+plt.text(2.05,-hi1-V0-Eg2 + Efp+ 0.05, 'Fv*', color='red', fontsize=8)
+plt.text(2.05,-hi1-V0 +Efn-0.09, 'Fc*', color='red', fontsize=8)
 
+plt.xlabel("x, nm")
 plt.show()
 
 
